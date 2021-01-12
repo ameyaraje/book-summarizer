@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render App correctly 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Switch>
+    <Route
+      component={[MockFunction]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[MockFunction]}
+      path="/dashboard"
+    />
+    <Route
+      component={[Function]}
+      path="/add"
+    />
+    <Route
+      component={[MockFunction]}
+      path=""
+    />
+  </Switch>
+</Router>
+`;
