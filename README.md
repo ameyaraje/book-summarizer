@@ -1,3 +1,7 @@
+# Book Summarizer 
+
+A note taking application for books I've read.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
