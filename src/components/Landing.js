@@ -11,7 +11,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className="container">
-                <p>I'm learning ReactJS and have been saving notes when I read books using MS Word. This is an application to learn ReactJS while making something I would value.</p>
+                <p>I'm learning ReactJS and have been saving notes when I read books using a text editor. This is an application to learn ReactJS while making something I would value.</p>
             </div>
         </div>
     );
