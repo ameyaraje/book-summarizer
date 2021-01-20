@@ -4,14 +4,10 @@ import filteredNotes from '../selectors/filteredNotes';
 import Note from './Note';
 
 const Notes = (props) => {
+    console.log(props);
     return (
         <div>
-            <h3>
-                Notes Component
-            </h3>
-            <p>
-                {props.notes.length}
-            </p>
+            <h3>Notes Component</h3>
             {
                 props.notes.map((note) => {
                     return (

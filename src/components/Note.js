@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { removeNote } from '../actions/notes';
 
-const Note = ({ title, author, isbn, text }) => {
+const Note = ({ id, title, author, isbn, text, dispatch }) => {
     return (
         <div>
             <ul>
@@ -9,8 +11,13 @@ const Note = ({ title, author, isbn, text }) => {
                 <li>{isbn}</li>
                 <li>{text}</li>
             </ul>
+            <button onClick={() => {
+                dispatch(removeNote({ id }))
+            }}>
+                Remove Note
+            </button>
         </div>
     );
 };
 
-export default Note;
+export default connect()(Note);
