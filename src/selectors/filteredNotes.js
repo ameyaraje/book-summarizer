@@ -13,6 +13,8 @@ const filteredNotes = (notes, { author, title }) => {
         return notes.filter(note => {
             return note.title === title && note.author === author;
         });
+    } else {
+        return notes;
     }
 };
 

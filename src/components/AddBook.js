@@ -14,6 +14,7 @@ const AddBook = (props) => {
             <NoteForm onSubmit={(note) => {
                 // console.log(note);
                 props.dispatch(addNote(note));
+                props.history.push('/dashboard');
             }} />
         </div>
     );
