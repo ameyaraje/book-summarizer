@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const NoteForm = (props) => {
-
+    // console.log(props);
+    
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [isbn, setIsbn] = useState('');
     const [bookText, setBookText] = useState('');
     const [error, setError] = useState(false);
+    
+    useEffect(() => {
+        if (props.book) {
+            setTitle(props.book.title);
+            setAuthor(props.book.author);
+            setBookText(props.book.text);
+            setIsbn(props.book.isbn);        
+        }
+    }, [props.book]);
 
     const onAuthorChanged = (e) => {
         setAuthor(e.target.value);

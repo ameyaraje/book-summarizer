@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { removeNote } from '../actions/notes';
 
 const Note = ({ id, title, author, isbn, text, dispatch }) => {
@@ -14,7 +15,12 @@ const Note = ({ id, title, author, isbn, text, dispatch }) => {
             <button onClick={() => {
                 dispatch(removeNote({ id }))
             }}>
-                Remove Note
+                Remove Book
+            </button>
+            <button>
+                <Link to={`/edit/${id}`}>
+                    Edit Book
+                </Link>
             </button>
         </div>
     );

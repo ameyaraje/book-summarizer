@@ -5,7 +5,7 @@ import { searchByAuthor, searchByTitle } from '../actions/filters';
 const NotesFilter = (props) => {
     return (
         <div>
-            <h5>Notes Filter</h5>
+            <h5>Books Filter</h5>
             <input
                 type="text"
                 value={props.filters.author}
@@ -14,6 +14,7 @@ const NotesFilter = (props) => {
                     props.dispatch(searchByAuthor(e.target.value));
                 }}
             />
+            <p>OR</p>
             <input
                 type="text"
                 value={props.filters.title}
