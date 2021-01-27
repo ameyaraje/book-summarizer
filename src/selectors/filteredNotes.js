@@ -1,17 +1,16 @@
 const filteredNotes = (notes, { author, title }) => {
 
-    // TODO: Should not expect exact matches (lower-cases; partial matches; etc)
     if (author && !title) {
         return notes.filter(note => {
-            return note.author === author;
+            return note.author.toLowerCase().includes(author);
         });
     } else if (!author && title) {
         return notes.filter(note => {
-            return note.title === title;
+            return note.title.toLowerCase().includes(title);
         });
     } else if (author && title) {
         return notes.filter(note => {
-            return note.title === title && note.author === author;
+            return note.title.toLowerCase().includes(title) && note.author.toLowerCase().includes(author);
         });
     } else {
         return notes;
