@@ -34,8 +34,26 @@ exports[`should render App correctly 1`] = `
       path="/dashboard"
     />
     <Route
-      component={[Function]}
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "type": [Function],
+        }
+      }
       path="/add"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "type": [Function],
+        }
+      }
+      path="/edit/:id"
     />
     <Route
       component={[MockFunction]}

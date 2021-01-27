@@ -4,11 +4,12 @@ exports[`should render Header correctly 1`] = `
 <nav
   className="navbar navbar-expand-lg navbar-dark bg-dark"
 >
-  <a
+  <Link
     className="navbar-brand"
+    to="/dashboard"
   >
     BookNotes
-  </a>
+  </Link>
   <button
     aria-controls="navbarNav"
     aria-expanded="false"
