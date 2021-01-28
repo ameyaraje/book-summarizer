@@ -18,3 +18,46 @@ test('should set up edit note action object', () => {
         }
     });
 });
+
+test('should set up action expense object with provided values', () => {
+    const book = {
+        title: 'test',
+        author: 'someone',
+        isbn: 'asdasd',
+        text: 'blah blah blah'
+    };
+
+    const action = addNote(book);
+
+    expect(action).toEqual({
+        type: 'ADD_NOTE',
+        note: {
+            id: expect.any(String),
+            title: 'test',
+            author: 'someone',
+            isbn: 'asdasd',
+            text: 'blah blah blah'
+        }
+    });
+});
+
+test('should set up action expense object with empty values', () => {
+    const book = {
+        title: '',
+        author: '',
+        isbn: '',
+        text: ''
+    };
+    const action = addNote(book);
+
+    expect(action).toEqual({
+        type: 'ADD_NOTE',
+        note: {
+            id: expect.any(String),
+            title: '',
+            author: '',
+            isbn: '',
+            text: ''
+        }
+    });
+});
