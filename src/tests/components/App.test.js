@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactShallowRenderer from 'react-test-renderer/shallow';
-import App from '../App';
+import App from '../../App';
 
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
-import Landing from '../components/Landing';
-import Dashboard from '../components/Dashboard';
-import NotFoundPage from '../components/NotFoundPage';
+import Landing from '../../components/Landing';
+import Dashboard from '../../components/Dashboard';
+import NotFoundPage from '../../components/NotFoundPage';
 
 test('should render App correctly', () => {
     const renderer = new ReactShallowRenderer();
@@ -15,9 +15,9 @@ test('should render App correctly', () => {
     expect(renderer.getRenderOutput()).toMatchSnapshot();
 });
 
-jest.mock('../components/Landing');
-jest.mock('../components/Dashboard');
-jest.mock('../components/NotFoundPage');
+jest.mock('../../components/Landing');
+jest.mock('../../components/Dashboard');
+jest.mock('../../components/NotFoundPage');
 
 describe('Tests for App Router', () => {
     test('Should render Landing on default route', () => {

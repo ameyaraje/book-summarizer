@@ -1,5 +1,8 @@
 const filteredNotes = (notes, { author, title }) => {
 
+    if (author) author = author.toLowerCase();
+    if (title) title = title.toLowerCase();
+    
     if (author && !title) {
         return notes.filter(note => {
             return note.author.toLowerCase().includes(author);

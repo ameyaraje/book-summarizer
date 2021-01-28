@@ -1,10 +1,10 @@
 import ReactShallowRenderer from 'react-test-renderer/shallow';
 import React from 'react';
-import Header from '../components/Header';
+import Landing from '../../components/Landing';
 
-test('should render Header correctly', () => {
+test('should render Landing Page correctly', () => {
     const renderer = new ReactShallowRenderer();
-    renderer.render(<Header />);
+    renderer.render(<Landing />);
     expect(renderer.getRenderOutput()).toMatchSnapshot();
 });
 
