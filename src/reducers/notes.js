@@ -1,16 +1,16 @@
-const demoState = {
-    notes: [{
-        id: 'dsfdsf',
-        title: 'abcd',
-        author: 'asdasd',
-        isbn: 'sdfdsfdf',
-        text: 'esdfdf'
-    }],
-    filters: {
-        author: 'dsfsdf',
-        title: 'asdas'
-    }
-};
+// const demoState = {
+//     notes: [{
+//         id: 'dsfdsf',
+//         title: 'abcd',
+//         author: 'asdasd',
+//         isbn: 'sdfdsfdf',
+//         text: 'esdfdf'
+//     }],
+//     filters: {
+//         author: 'dsfsdf',
+//         title: 'asdas'
+//     }
+// };
 
 const notesReducerDefaultState = [];
 

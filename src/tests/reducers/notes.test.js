@@ -1,5 +1,4 @@
 import notesReducer from '../../reducers/notes';
-import { uuid } from 'uuid';
 import notes from '../fixtures/notes';
 
 test('should set up default filter values', () => {

@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render NoteForm correctly 1`] = `
+<div>
+  <h3>
+    Note Form
+  </h3>
+  <form>
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Author"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Title"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="ISBN"
+      type="text"
+      value=""
+    />
+    <textarea
+      cols="30"
+      onChange={[Function]}
+      placeholder="Enter Book Notes"
+      rows="10"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`should render NoteForm with some data 1`] = `
+<div>
+  <h3>
+    Note Form
+  </h3>
+  <form>
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Author"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Title"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="ISBN"
+      type="text"
+      value=""
+    />
+    <textarea
+      cols="30"
+      onChange={[Function]}
+      placeholder="Enter Book Notes"
+      rows="10"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
